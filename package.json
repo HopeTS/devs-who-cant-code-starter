@@ -1,7 +1,14 @@
 {
-  "name": "filesharing-react-app-example",
+  "name": "dwcc-starter-desktop-app",
+  "author": "111 Studios",
+  "license": "Apache-2.0",
+  "description": "The desktop app version of the starting boilerplate for an AI driven development experience, brought to you by Devs Who Can't Code.",
   "main": "index.html",
   "type": "module",
+  "version": "1.0.0",
+  "keywords": [
+    "pear", "ai", "devs", "who", "can't", "code", "dwcc", "bitcoin", "audible"
+  ],
   "scripts": {
     "dev": "pear dev",
     "test": "standard"
@@ -14,8 +21,6 @@
       "width": 720
     }
   },
-  "author": "Holepunch Inc",
-  "license": "Apache-2.0",
   "devDependencies": {
     "brittle": "^3.0.0",
     "joyrider": "^1.0.0",
