@@ -1,17 +1,17 @@
 import { html } from "htm/react";
 import { useState, useEffect } from "react";
-import useUser from "../hooks/use-user";
 import { Box, CircularProgress, Typography } from "@mui/material";
 
 export default ({ app }) => {
   const [isLoaded, setIsLoaded] = useState(false);
-  const { loaded: isUserLoaded } = useUser();
 
+  // Use this to manage loading screen. When all state management providers are
+  // loaded, set isLoaded to true.
   useEffect(() => {
-    const isAllLoaded = isUserLoaded;
+    const isAllLoaded = true;
     if (!isAllLoaded) return;
     setIsLoaded(true);
-  }, [isUserLoaded]);
+  }, []);
 
   if (!isLoaded) {
     return html`
